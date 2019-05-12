@@ -1,0 +1,57 @@
+.page-content {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+.button {
+    color: white;
+    background-color:#0ad560;
+    border: none;
+    font-size: 14px;
+    padding: 15px 25px;
+    width: 180px;
+}
+.button:hover {
+    opacity: 0.8;
+}
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-color: rgba(200, 200, 200, 0.75);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2; 
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.5s ease;
+}
+.modal-opened {
+    opacity: 1;
+    pointer-events: auto;
+}
+.modal-content {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;      
+    align-items: center;
+    width: 350px;
+    position: relative;
+    padding: 3%;
+    background: #fff;
+}
+.modal-content__link {
+    color: black;
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 13px;
+}
+.modal-content__link:hover {
+    color:#0ad560;
+}
